@@ -36,19 +36,21 @@ class B2
 function that overrides pvf(); D21::pvf() should output the value of the string.*/
 class D21 : public B2 
  {
+ 	string s;
      void pvf() {cout << s << endl;}
-     string s;
+     
  };
  /*Define a class D22 that is just like D21
 except that its data member is an int.*/
  class D22 : public B2 {
  public:
- void pvf() {cout << n << endl;
  int n;
+ void pvf() {cout << n << endl;}
+ 
  };
  //Define a function f() that takes a B2& argument and calls pvf() for its argument.
  void f(B2& b2ref){
- b2ref.pvf;
+ b2ref.pvf();
  };
  
 
